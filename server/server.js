@@ -9,7 +9,7 @@ import config from '../webpack.config.js';
 import bodyParser from 'body-parser';
 
 const isDeveloping = process.env.NODE_ENV !== 'production';
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 const app = express();
 app.use(bodyParser.json());
 app.use('/static', express.static(path.join(__dirname, '../static')));
